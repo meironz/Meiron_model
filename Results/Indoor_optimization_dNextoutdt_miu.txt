@@ -1,0 +1,79 @@
+miu = 0.035
+dNextoutdt = 0.08
+
+RMSREm = 0.28
+RMSRENint = 0.392
+
+===========================
+miu = 0.035
+dNextoutdt = 0.07
+
+RMSREm = 0.28
+RMSRENint = 0.364
+===========================
+miu = 0.035
+dNextoutdt = 0.05
+
+RMSREm = 0.28
+RMSRENint = 0.315
+===========================
+miu = 0.035
+dNextoutdt = 0.02
+
+RMSREm = 0.28
+RMSRENint = 0.301
+===========================
+miu = 0.035
+dNextoutdt = 0.03
+
+RMSREm = 0.28
+RMSRENint = 0.291
+===========================
+miu = 0.035
+dNextoutdt = 0.04
+
+RMSREm = 0.28
+RMSRENint = 0.298
+===========================
+miu = 0.035
+dNextoutdt = 0.035
+
+RMSREm = 0.28
+RMSRENint = 0.293
+===================================
+
+After excluding treatment 2000/1/168 and 200/5/168:
+===========================
+miu = 0.035
+dNextoutdt = 0.035
+
+RMSREm = 0.262
+RMSRENint = 0.266
+===================================
+
+===========================
+miu = 0.035
+dNextoutdt = 0.035
+
+RMSREm = 0.262
+RMSRENint = 0.266
+===================================
+
+DGR measured for Ulva sp. under different treatments in controlled indoor cultivation sleeves
+
+===========================
+miu = 0.034
+dNextoutdt = 0.014
+
+RMSREm = 0.261
+RMSRENint = 0.241
+===========================
+miu = 0.04
+dNextoutdt = 0.014
+
+RMSREm = 0.291
+RMSRENint = 0.254
+============================
+
+
+
