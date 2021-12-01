@@ -1,5 +1,5 @@
 # Offshore Ulva st. reactor model
-Predicts the growth rate and internal nitrate content of Ulva in open sea offshore reactors
+Predicts the growth rate and internal nitrate content of Ulva in open sea offshore reactors by @meironz 
 
 ## How to use it
 1. Run two Jupyter notebooks in this specific order to calibrate key parameters: 
