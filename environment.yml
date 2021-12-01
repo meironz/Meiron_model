@@ -85,6 +85,7 @@ dependencies:
   - pip:
     - dill==0.3.4
     - et-xmlfile==1.1.0
+    - joblib==1.1.0
     - multiprocess==0.70.12.2
     - openpyxl==3.0.9
     - pathos==0.2.8
@@ -93,6 +94,9 @@ dependencies:
     - ppft==1.6.6.4
     - researchpy==0.3.2
     - salib==1.4.5
+    - scikit-learn==1.0.1
     - scikit-posthocs==0.6.7
+    - sklearn==0.0
     - statsmodels==0.13.1
+    - threadpoolctl==3.0.0
 prefix: C:\Users\alex\miniconda3\envs\meiron
