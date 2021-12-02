@@ -1,13 +1,8 @@
 name: ulva_model
-
 channels:
-
   - conda-forge
-
   - defaults
-
 dependencies:
-
   - backcall
   - backports
   - backports.functools_lru_cache
@@ -23,7 +18,6 @@ dependencies:
   - entrypoints
   - fonttools
   - freetype
-  - icc_rt
   - icu
   - intel-openmp
   - ipykernel
@@ -78,17 +72,13 @@ dependencies:
   - tornado
   - traitlets
   - tzdata
-  - vc
-  - vs2015_runtime
   - wcwidth
   - wheel
-  - wincertstore
   - xz
   - zeromq
   - zlib
   - zstd
   - pip:
-
     - dill
     - et-xmlfile
     - joblib
