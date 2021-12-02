@@ -1,4 +1,4 @@
-name: meiron
+name: ulva_model
 channels:
   - conda-forge
   - defaults
@@ -99,4 +99,3 @@ dependencies:
     - sklearn==0.0
     - statsmodels==0.13.1
     - threadpoolctl==3.0.0
-prefix: C:\Users\alex\miniconda3\envs\meiron

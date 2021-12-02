@@ -10,6 +10,16 @@ Predicts the growth rate and internal nitrate content of Ulva in open sea offsho
 - [Notebook 3](/notebooks/3_Reverse_engineering_Offshore_Next.ipynb)
 
 ## Use pre-defined conda environment
+Use: 
+
+    conda create --name --file environment.yml
+
+or:
+
+    conda create --name offshore_model --file conda_requirements.txt
+
+## Future directions
+https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html#
 
 
 
