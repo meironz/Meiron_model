@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexliberzonlab/Offshore_Ulva_reactor_model/HEAD)
+
 # Offshore Ulva st. reactor model
 Predicts the growth rate and internal nitrate content of Ulva in open sea offshore reactors by Meiron Zollmann, Tel Aviv University
 
