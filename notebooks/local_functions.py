@@ -296,60 +296,7 @@ def controlled_N_new(x,t,Nintmax,Nintmin,Vmax,Ks,dNextoutdt,dNextindt,miu,dmoutd
     
     return [dNextdt,dNintdt,dmdt]
 
-def controlled_N_constST(x,t,Nintmax,Nintmin,Vmax,Ks,dNextoutdt,dNextindt,miu,dmoutdt,Nintcrit,Z,KI,K0,Ka,
-                losses20,teta,umol_to_percent_DW,I0,Temp):
 
-
-    Next = x[0] # units: [umol N/l]
-    Nint = x[1] # units: [% g N/g DW]
-    m = x[2] # units: [g DW/l]
-    
-    Neff = (Nintmax - Nint)/(Nintmax - Nintmin)  # units: [ ]
-    if Next <= 0:
-        uN = 0
-    else: 
-        uN = Vmax * Next / (Ks + Next)  # units: [umol N/g DW/h]
-    if Nint >= Nintcrit:
-        fN = 1
-    else:
-        fN = ((Nint - Nintmin)/Nint) / ((Nintcrit - Nintmin)/Nintcrit)  # units: [ ]
-    fP = 1  #(N:P < 12)
-
-
-    # density - light penetration effects:
-    SD = m * 5 / (0.2 * 0.178) # Stocking Density. units: [g DW/ m^2]
-    I_average = (I0(t) / (K0 * Z + Ka * SD)) * (1 - np.exp(-(K0 * Z + Ka * SD))) # units: [umul photons/(m^2 s)]
-    fI = I_average / (I_average + KI) # units: [-]
-    # print(f"t={t} I0={I0(t)} fI={fI}")
-    
-        
-    
-    # empirically defined losses
-    losses = losses20 * teta ** (Temp - 20)
-
-    # limiting factors:
-    g = min(fN,fI,fP)
-    # print(f"t={t} g= {g} fN = {fN}, fI = {fI} fP = {fP} fT = {fT} fS = {fS}")
-
-    
-    umol_to_percent_DW = 100*14e-6 #[% g N/umol N] 
-    
-    # Reactor Next -> Nint -> m and feedback
-
-    dNextdt = - Neff * uN * m  - dNextoutdt * Next + dNextindt # [umol N/l/h] # added *Next
-    dNintdt = umol_to_percent_DW * Neff * uN - Nint * miu * g # units: [%g N/g DW/h]
-
-    if fI == 0:
-        losses = 0
-    else: 
-        losses = losses20 * teta ** (Temp - 20)
-    dmdt = (miu * g - losses) * m #units: [g DW/l/h]
-    
-    #dNextdt = -Neff * uN * m - dNextoutdt + dNextindt # units: [umol N/l/h]
-    #dNintdt = umol_to_percent_DW * Neff * uN - Nint * miu * fN  #units: [%g N/g DW/h]
-    #dmdt = miu * fN * m - dmoutdt #units: [g DW/l/h]
-    
-    return [dNextdt,dNintdt,dmdt]
 
 
 def constant_N_new(x,t,Nintmax,Nintmin,Vmax,Ks,dNextoutdt,dNextindt,miu,dmoutdt,Nintcrit,S,Z,KI,K0,Ka,Topt,
