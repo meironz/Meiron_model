@@ -603,7 +603,8 @@ def plot_result(t_model,Next_model,Nint_model,m_model,Nint=None, yerrNint=None, 
 def Bottles_IMS(t, y, Nintcrit,Nintmax,Nintmin,Vmax,Ks,KN,miu,S,Z,KI,K0,Ka,Topt,\
             Tmin,Tmax,losses20,teta,Sopt,Smin,Smax, f1,f0,dilution,n,umol_to_percent_DW,dNextoutdt):
     """
-    This is a second version of Reading_val. The difference is that this function works with IMS data and not HOBO data
+    This is a second version of Reading_val. 
+    The difference is that this function works with IMS data and not HOBO data
     """
     
     import matplotlib.pyplot as plt
