@@ -5,11 +5,11 @@ Predicts the growth rate and internal nitrate content of Ulva in open sea offsho
 
 ## How to use it
 1. Run two Jupyter notebooks in this specific order to calibrate key parameters: 
-- [Notebook 1](/notebooks/1_Indoor_system_optimisation_HighRes_nofSfT.ipynb)
-- [Notebook 2](/notebooks/2_Brine_system_optimization_new_constant_miu.ipynb)
+- [Notebook 1](/notebooks/indoor_calibration.ipynb)
+- [Notebook 2](/notebooks/brine_calibration.ipynb)
 
 2. Run this Jupyter notebook to create the offshore prediction
-- [Notebook 3](/notebooks/3_Reverse_engineering_Offshore_Next.ipynb)
+- [Notebook 3](/notebooks/estimate_Next_offshore_experiment.ipynb)
 
 ## Use pre-defined conda environment
 Use: 
