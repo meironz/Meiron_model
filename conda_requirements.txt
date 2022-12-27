@@ -76,7 +76,7 @@ scikit-learn=1.0.1=pypi_0
 scikit-posthocs=0.6.7=pypi_0
 scipy=1.7.1=py39hbe87c03_2
 seaborn=0.11.2=pyhd3eb1b0_0
-setuptools=58.0.4=py39haa95532_0
+setuptools>=65.5.1
 sip=4.19.13=py39hd77b12b_0
 six=1.16.0=pyh6c4a22f_0
 sklearn=0.0=pypi_0
